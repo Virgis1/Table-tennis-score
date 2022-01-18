@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table tennis score</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img src="https://media3.giphy.com/media/37q9y7WbvLAy3Wg90h/giphy.gif" alt="table tennis">
+        
+      </div>
+      <div class="game">
+        <div class="gameInfo">
+          <div class="score"><span id="p1ScoreDisplay">0</span> vs <span id="p2ScoreDisplay">0</span></div>
+          <div class="winner"></div>
+        </div>
+        <label>Playing to:</label>
+        <select id="winningScoreSelect">
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="11">11</option>
+          <option value="15">15</option>
+          <option value="21">21</option>
+        </select>
+        <div class="buttons">
+          <button id="p1Button">Player1 point</button>
+          <button id="p2Button">Player2 point</button>
+          <button onclick="reset()" id="reset">Reset game</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
